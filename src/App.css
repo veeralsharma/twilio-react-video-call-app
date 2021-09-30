@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333e5a;
+  min-height: 100%;
+  padding:10%;
+}
+
+h1 {
+  font-weight: 300;
+  padding: 0.4em 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  background: #ffffff;
+  flex-grow: 1;
+}
+
+form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 300;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+form > div {
+  width: 100%;
+  margin-bottom: 1em;
+}
+form > div > label {
+  display: block;
+  margin-bottom: 0.3em;
+}
+form > div > input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid #333e5a;
+}
+
+.room {
+  position: relative;
+}
+
+.room > h3 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.controlbuttons{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.local-participant {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.remote-participants {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 0 2em 2em;
+}
+.participant {
+  background: #333e5a;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.participant h3 {
+  text-align: center;
+  padding-bottom: 0.5em;
+  color: #fff;
+}
+
+video {
+  width: 100%;
+  height: 50vh;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
